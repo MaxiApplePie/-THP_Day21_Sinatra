@@ -1,0 +1,17 @@
+<html>
+  <head>
+    <title>Détail potin</title>
+  </head>
+  <body>
+    <h1>Détail potin !</h1>
+    <% gossips.each do |gossip| %>
+      <% if (gossip.id == id) %>
+      <p>
+      <%= gossip.id %><br/>
+      <%= gossip.author %><br/>
+      <%= gossip.content %>
+      </p>
+      <% end %>
+    <% end %>
+  </body>
+</html>

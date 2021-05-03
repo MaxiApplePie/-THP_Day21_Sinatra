@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title>Détail potin</title>
+  </head>
+  <body>
+    <h1>Détail potin !</h1>
+      <p>
+      Voici la page du potin n°<%= Gossip_to_find.id %><br/>
+      Son auteur : ==<%= Gossip_to_find.author %><br/>==
+      Le contenu du potin : ==<%= Gossip_to_find.content %>==
+      </p>
+      <a href="/gossips/<%= Gossip_to_find.id %>/edit/">éditer le potin</a>
+      <a href="/">Lien</a> pour revenir à la page des potins
+   </body>
+</html>
